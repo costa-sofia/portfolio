@@ -1,0 +1,106 @@
+*{box-sizing: border-box;}
+
+body
+{
+    background-color: #000024;
+    font-family: 'JetBrains Mono', monospace;
+    color: white;
+    margin: 0;
+    border: 0;
+}
+
+/* header start */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+header h1
+{
+    color: #9F55FF;
+}
+header ul
+{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2vw;
+}
+#socialheader a
+{
+    margin: 0 auto;
+    text-decoration: none;
+
+}
+#socialheader svg
+{
+    fill: white;
+}
+#socialheader svg:hover
+{
+    fill:#9F55FF;
+}
+
+/* header end */
+
+/* banner start */
+#banner
+{
+    background-image: url(banner1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: right;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid #4E0AA6;
+    border-left: none;
+    border-right: none;
+}
+#apresentação
+{
+    text-align: right;
+    margin-right: 10vh;
+}
+#dev
+{
+   color: #9F55FF;
+   font-size: 1.1em;
+   margin-bottom: 0;
+}
+#quemsou
+{
+   margin-top: 1vh;
+}
+#sofia
+{
+    color: #9F55FF;
+}
+#descrição
+{
+    font-size: 1.1rem;
+}
+/* banner end */
+
+/* sobre start */
+
+#sobremim
+{
+    margin-top: 10vh;
+}
+#abouttitle
+{
+    text-align: center;
+    -webkit-text-stroke: 0.1px #9F55FF;
+    color: #000024;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* sobre end */
