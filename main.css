@@ -71,7 +71,6 @@ header ul
 #dev
 {
    color: #9F55FF;
-   font-size: 1.1em;
    margin-bottom: 0;
 }
 #quemsou
@@ -82,25 +81,39 @@ header ul
 {
     color: #9F55FF;
 }
-#descrição
+#nome
 {
-    font-size: 1.1rem;
+    font-size: 2.6rem;
 }
 /* banner end */
 
 /* sobre start */
 
-#sobremim
-{
-    margin-top: 10vh;
-}
-#abouttitle
+.title
 {
     text-align: center;
     -webkit-text-stroke: 0.1px #9F55FF;
     color: #000024;
     font-size: 2rem;
     font-weight: 800;
+    margin-top: 10vh;
+}
+#sobremim span
+{
+    color: #9F55FF;
+}
+#sobremiminfo
+{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10%;
+    padding: 10vh 10vw
+}
+#sobremiminfo svg
+{
+    fill: #9F55FF;
 }
 
 /* sobre end */
+
