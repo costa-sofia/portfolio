@@ -98,7 +98,7 @@ header ul
     font-weight: 800;
     margin-top: 10vh;
 }
-#sobremim span
+#ola
 {
     color: #9F55FF;
 }
@@ -106,7 +106,6 @@ header ul
 {
     display: flex;
     align-items: center;
-    width: 100%;
     gap: 10%;
     padding: 10vh 10vw
 }
@@ -114,6 +113,78 @@ header ul
 {
     fill: #9F55FF;
 }
+#sobremiminfo button
+{
+    color: white;
+    background-color: #9f55ff75;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
 
 /* sobre end */
 
+/* side menu start */
+
+#menu
+{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 2vh;
+    z-index: 100;
+}
+#menu a
+{
+    position: absolute;
+    right: -130px;
+    width: 170px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-color: #9f55ff75;
+    font-size: 1.1rem;
+    padding: 1%;
+    border-radius: 10px 0 0 10px;
+    transition: 0.5;
+}
+#menu a:hover
+{
+    right: 0;
+}
+#menu1
+{
+    top: 2vh;
+}
+#menu2
+{
+    top: 12vh;
+}
+#menu3
+{
+    top: 22vh;
+}
+#menu4
+{
+    top: 32vh;
+}
+
+#itens
+{
+    position: absolute;
+    right: 0;
+    background-color: #4e0aa665;
+    border: none;
+    border-radius: 30% 0 0 30%;
+    padding: 1%;
+}
+
+
+
+
+/* side menu end */
+  #teste
+  {
+    height: 700px;
+    background-color: #04AA6D;
+    width: 10%;
+  }
