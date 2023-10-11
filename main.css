@@ -106,17 +106,21 @@ header ul
 {
     display: flex;
     align-items: center;
+    grid-template-columns: 1fr 1fr;
     gap: 10%;
     padding: 10vh 10vw
 }
-#sobremiminfo svg
+#sobreimg
 {
-    fill: #9F55FF;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  justify-self: flex-end;
 }
 #sobremiminfo button
 {
     color: white;
-    background-color: #9f55ff75;
+    background-color: #9f55ffc5;
     padding: 10px;
     border-radius: 10px;
     border: none;
@@ -177,14 +181,130 @@ header ul
     border-radius: 30% 0 0 30%;
     padding: 1%;
 }
-
-
-
-
 /* side menu end */
-  #teste
-  {
-    height: 700px;
-    background-color: #04AA6D;
-    width: 10%;
-  }
+
+/* contato start */
+#contato
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10vh 10vw;
+    align-items: center;
+}
+#contatoinfo span
+{
+    color: #9F55FF;
+}
+
+#contatoinfo a
+{
+
+    text-decoration: none;
+    color: white;
+}
+#contatoinfo svg
+{
+    fill: white;
+   
+}
+#contatoinfo svg:hover
+{
+    fill:#9F55FF;
+}
+#organizer2
+{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 2vh;
+}
+#organizer2 h1
+{
+    margin: 0;
+}
+#contato form
+{
+    background-color: rgba(78, 10, 166, 0.30);
+    filter: drop-shadow(0px 0px 60px rgba(159, 85, 255, 0.64));
+    border-radius: 30px;
+    padding: 5vh 3vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1vh;
+    column-gap: 2vh;
+}
+#contactform h1
+{
+    grid-column: span 2;
+    text-align: center;
+    margin: 0 0 2vh 0;
+}
+#fname 
+{
+    height: 35px;
+    border-radius: 30px;
+    border: 3px solid #9F55FF;
+    background: rgba(217, 217, 217, 0.00);
+    box-shadow: 0px 4px 4px 0px #2AB8C9;
+    margin-bottom: 2vh;
+}
+#cemail
+{
+    height: 35px;
+    border-radius: 30px;
+    border: 3px solid #9F55FF;
+    background: rgba(217, 217, 217, 0.00);
+    box-shadow: 0px 4px 4px 0px #2AB8C9;
+    margin-bottom: 2vh;
+}
+#subject
+{
+    height: 35px;
+    border-radius: 30px;
+    border: 3px solid #9F55FF;
+    background: rgba(217, 217, 217, 0.00);
+    box-shadow: 0px 4px 4px 0px #2AB8C9;
+    margin-bottom: 2vh;
+}
+#telefone
+{
+    height: 35px;
+    border-radius: 30px;
+    border: 3px solid #9F55FF;
+    background: rgba(217, 217, 217, 0.00);
+    box-shadow: 0px 4px 4px 0px #2AB8C9;
+    margin-bottom: 2vh;
+}
+#contactform textarea
+{
+    height: 30vh;
+    border-radius: 30px;
+    border: 3px solid #9F55FF;
+    background: rgba(217, 217, 217, 0.00);
+    box-shadow: 0px 4px 4px 0px #2AB8C9;
+    margin-bottom: 2vh;
+    resize: vertical;
+}
+
+#message::placeholder
+{
+    color: white;
+}
+
+.span
+{
+    grid-column: span 2;
+}
+
+#submit
+{
+    color: white;
+    width: 50%;
+    background-color: #9f55ffc5;
+    padding: 15px;
+    border-radius: 50px;
+    border: none;
+    justify-self: center;
+}
+
+/* contato end */
