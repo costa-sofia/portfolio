@@ -184,6 +184,18 @@ header ul
 /* side menu end */
 
 /* contato start */
+#contato input
+{
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+#contato textarea
+{
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
 #contato
 {
     display: grid;
@@ -241,7 +253,7 @@ header ul
 }
 #fname 
 {
-    height: 35px;
+    height: 6vh;
     border-radius: 30px;
     border: 3px solid #9F55FF;
     background: rgba(217, 217, 217, 0.00);
@@ -250,7 +262,7 @@ header ul
 }
 #cemail
 {
-    height: 35px;
+    height: 6vh;
     border-radius: 30px;
     border: 3px solid #9F55FF;
     background: rgba(217, 217, 217, 0.00);
@@ -259,7 +271,7 @@ header ul
 }
 #subject
 {
-    height: 35px;
+    height: 6vh;
     border-radius: 30px;
     border: 3px solid #9F55FF;
     background: rgba(217, 217, 217, 0.00);
@@ -268,7 +280,7 @@ header ul
 }
 #telefone
 {
-    height: 35px;
+    height: 6vh;
     border-radius: 30px;
     border: 3px solid #9F55FF;
     background: rgba(217, 217, 217, 0.00);
@@ -290,6 +302,7 @@ header ul
 {
     color: white;
 }
+
 
 .span
 {

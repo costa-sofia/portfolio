@@ -8,17 +8,11 @@ sofia.addEventListener("click", function(){
 
             texto.textContent = "sofia";
 
-    /*Queria colocar as outras opcões para mudar o nome, mas travei aqui e não sei pra onde ir kk**/
-
-
 })
 
 estudante.addEventListener("click", function(){
 
     texto.textContent = " Sou estudante do curso técnico em Técnologia da Informaçaõ no colégio COTEMIG,fora do curso sempre fui uma apaixonada pela linguagem Java na qual desenvolvo projetos de forma autônoma.";
-
-/*Queria colocar as outras opcões para mudar o nome, mas travei aqui e não sei pra onde ir kk**/
-
 
 })
 
@@ -26,11 +20,25 @@ desenvolvedora.addEventListener("click", function(){
 
     texto.textContent = "desenvolvedora";
 
-/*Queria colocar as outras opcões para mudar o nome, mas travei aqui e não sei pra onde ir kk**/
-
-
 })
 
+// mascara telefone
+const handlePhone = (event) => 
+{
+    let input = event.target
+    input.value = phoneMask(input.value)
+}
+  
+  const phoneMask = (value) => 
+  {
+    if (!value) return ""
+    value = value.replace(/\D/g,'')
+    value = value.replace(/(\d{2})(\d)/,"($1) $2")
+    value = value.replace(/(\d)(\d{4})$/,"$1-$2")
+    return value
+  }
+// mascara telefone
 
+//mascara  nome
 
 

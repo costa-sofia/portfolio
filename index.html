@@ -149,12 +149,12 @@
                 <input id="fname" class="registerdata" type="text">
                 <input id="cemail" class="registerdata" type="email1">
                 <label for="telefone">Telefone</label>
-                <input id="telefone" class="span" class="registerdata" type="number">
-                <label class="span" for="subject">Subject</label>
+                <input id="telefone" class="span" type="tel" maxlength="15" onkeyup="handlePhone(event)" />
+                <label class="span" for="subject">Assunto</label>
                 <input class="span" id="subject" class="registerdata" type="text">
-                <label class="span" for="message">Message</label>
-                <textarea class="span" id="message" class="registerdata" type="text" placeholder="  Write your notes or questions here..."></textarea>
-                <input class="span" id="submit" type="submit" value="SEND MESSAGE">
+                <label class="span" for="message">Mensagem</label>
+                <textarea class="span" id="message" class="registerdata" type="text" placeholder="  Algo á acrescentar? escreva sua mensagem aqui..."></textarea>
+                <input class="span" id="submit" type="submit" value="SEND MESSAGE" >
         </section> 
     </section>
 <!--contacrt end-->
