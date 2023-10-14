@@ -13,9 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&family=Kavoon&display=swap" rel="stylesheet">
     <!-- fonte -->
 </head>
-<body>
+<body id="body">
     <header>
-        <h1>Sofia.dev</h1>
+        <section>
+            <div class="hero-container">
+              <div class="environment"></div>
+              <h2 class="hero glitch layers" data-text="Sofia.dev"><span>Sofia.dev</span></h2>
+            </div>
+          </section>
+        <!-- <h1 class="flickering-text" >Sofia.dev</h1> -->
 
         <ul id="socialheader">
             <li><a href="https://www.linkedin.com/in/sofia-ferreira-costa">
@@ -54,6 +60,17 @@
             <a id="menu2" href="#portfolio">Portfólio</a>
             <a id="menu3" href="#habilidades">Habilidades</a>
             <a id="menu4" href="#contato">Contato</a>
+            <div id="menu5">
+                <div class="svg-container-dark" onclick="toggleBrightnessDark()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+                    </svg>
+                </div>
+            </div>
         
     </div>
     
@@ -83,16 +100,50 @@
 
     <section id="portfolio">
         <h1 class="title">Portfólio</h1>
-        <article>
-            <div id="teste"></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </article>    
+
+        <a id="streetview"></a>
+        <div id="project1">
+            <h1>
+                <span class="colortext">Street View</span>
+                <br>
+                Meu primeiro projeto autoral, utilizando apenas Html e CSS, a proposta era uma galeria de arte de rua virtual, uma espécia de 
+                e-commerce.
+            </h1>
+        </div>
+        <div class="project2">
+            <h1>
+                <span class="colortext">Bank Project</span>
+                <br>
+                Projeto criado em java com o objetivo de simular uma conta bancária, utilizando MySQL, possui um sistema de depósito, retirada, login e cadastro totalmente integrado ao banco de dados.
+            </h1>
+        </div>
+        <a id="bank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50%" fill="#9F55FF" class="bi bi-bank" viewBox="0 0 16 16">
+                <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.501.501 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89L8 0ZM3.777 3h8.447L8 1 3.777 3ZM2 6v7h1V6H2Zm2 0v7h2.5V6H4Zm3.5 0v7h1V6h-1Zm2 0v7H12V6H9.5ZM13 6v7h1V6h-1Zm2-1V4H1v1h14Zm-.39 9H1.39l-.25 1h13.72l-.25-1Z"/>
+              </svg>
+        </a>
+        <a id="photosen"></a>
+        <div id="project3">
+            <h1>
+                <span class="colortext">Reprodução do site Photosen.</span>
+                <br>
+                Projeto realizado para a aula de Desenvolvimento Front-End, onde a proposta era a reprodução parcial do site usando Html e CSS.
+            </h1>
+        </div>
+        <div id="project4">
+            <h1>
+                <span class="colortext">The best</span>
+                <br>
+                Solução criada usando c#, baseada em uma premiação do colégio COTEMIG, que lê as notas inseridas no sistema e calcula e informa a média dos três alunos com as maiores notas, também informa em quais matérias o aluno foi reprovado.
+            </h1>
+        </div>
+        <a id="thebest">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50%" fill="#9F55FF" class="bi bi-trophy" viewBox="0 0 16 16">
+                <path d="M2.5.5A.5.5 0 0 1 3 0h10a.5.5 0 0 1 .5.5c0 .538-.012 1.05-.034 1.536a3 3 0 1 1-1.133 5.89c-.79 1.865-1.878 2.777-2.833 3.011v2.173l1.425.356c.194.048.377.135.537.255L13.3 15.1a.5.5 0 0 1-.3.9H3a.5.5 0 0 1-.3-.9l1.838-1.379c.16-.12.343-.207.537-.255L6.5 13.11v-2.173c-.955-.234-2.043-1.146-2.833-3.012a3 3 0 1 1-1.132-5.89A33.076 33.076 0 0 1 2.5.5zm.099 2.54a2 2 0 0 0 .72 3.935c-.333-1.05-.588-2.346-.72-3.935zm10.083 3.935a2 2 0 0 0 .72-3.935c-.133 1.59-.388 2.885-.72 3.935zM3.504 1c.007.517.026 1.006.056 1.469.13 2.028.457 3.546.87 4.667C5.294 9.48 6.484 10 7 10a.5.5 0 0 1 .5.5v2.61a1 1 0 0 1-.757.97l-1.426.356a.5.5 0 0 0-.179.085L4.5 15h7l-.638-.479a.501.501 0 0 0-.18-.085l-1.425-.356a1 1 0 0 1-.757-.97V10.5A.5.5 0 0 1 9 10c.516 0 1.706-.52 2.57-2.864.413-1.12.74-2.64.87-4.667.03-.463.049-.952.056-1.469H3.504z"/>
+              </svg>
+        </a>
+
+        
     </section>
 
     <!--contact start-->
@@ -146,7 +197,7 @@
                 <h1 class="title">Contato</h1>
                 <label for="fname">Name</label>
                 <label for="cemail">Email</label>
-                <input id="fname" class="registerdata" type="text">
+                <input id="fname" class="registerdata" type="text" oninput="handleName(event)">
                 <input id="cemail" class="registerdata" type="email1">
                 <label for="telefone">Telefone</label>
                 <input id="telefone" class="span" type="tel" maxlength="15" onkeyup="handlePhone(event)" />

@@ -40,5 +40,45 @@ const handlePhone = (event) =>
 // mascara telefone
 
 //mascara  nome
+const handleName = (event) => {
+  let input = event.target;
+  input.value = capitalizeWords(input.value);
+}
+
+const capitalizeWords = (value) => {
+  if (!value) return "";
+
+  const words = value.split(' ');
+
+  const capitalizedWords = words.map((word) => {
+      if (word.length > 0) {
+          return word[0].toUpperCase() + word.slice(1);
+      }
+      return word;
+  });
+
+  return capitalizedWords.join(' ');
+}
+
+
+function toggleBrightnessDark() {
+  const container = document.querySelector('.svg-container-dark');
+  container.classList.toggle('active');
+
+  const body = document.getElementById('body');
+
+  if (body.classList.contains('dark-mode')) {
+    // Modo escuro ativado, troque para o modo claro
+    body.classList.remove('dark-mode');
+    container.querySelector('.bi-moon').style.display = 'none';
+    container.querySelector('.bi-moon-stars-fill').style.display = 'inline';
+  } else {
+    // Modo claro ativado, troque para o modo escuro
+    body.classList.add('dark-mode');
+    container.querySelector('.bi-moon').style.display = 'inline';
+    container.querySelector('.bi-moon-stars-fill').style.display = 'none';
+  }
+}
+
 
 
