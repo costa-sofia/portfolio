@@ -713,17 +713,6 @@ header ul
 {
     grid-column: span 2 ;
 }
-#portfolio div
-{
-    border: 2px solid #4E0AA6;
-    box-shadow: 0px 4px 60px 0px #4E0AA6;
-    width:100%;
-    height: 50vh;
-    background-color: #4e0aa6a0;
-    visibility: hidden;
-    padding: 1%;
-    display: flex;
-}
 #portfolio a
 {
     border: 2px solid #4E0AA6;
@@ -731,38 +720,46 @@ header ul
     width:100%;
     height: 50vh;
 }
-#streetview
+.projects
 {
-    background-image: url(streetview.png);
-    background-size: cover;
-    background-position: center;
-}
-#photosen
-{
-    background-image: url(photosen.png);
-    background-size: cover;
-    background-position: center;
-}
-#bank
-{
-    display: grid;
-    justify-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    position: relative;
 }
-#thebest
+.projectd
 {
-    display: grid;
-    justify-items: center;
-    align-items: center;
+    display: none;
+    border: 2px solid #4E0AA6;
+    box-shadow: 0px 4px 60px 0px #4E0AA6;
+    width:100%;
+    height: 50vh;
+    background-color: #4e0aa6a0;
+    padding: 1%;
+    position: relative;
 }
-#streetview:hover ~ #project1
+.projects:hover .projectd
 {
-    visibility: visible;
+  display: block;
 }
-#photosen:hover ~ #project3
+.projects:hover img
 {
-    visibility: visible;
+  display: none;
 }
+.projects:hover svg
+{
+  display: none;
+}
+.left 
+{
+  justify-self: flex-start;
+}
+.right
+{
+  justify-self: flex-end;
+}
+
 .colortext
 {
     color: #9F55FF;
