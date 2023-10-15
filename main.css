@@ -597,6 +597,7 @@ header ul
     font-size: 2rem;
     font-weight: 800;
     margin-top: 10vh;
+    grid-column: span 3;
 }
 #ola
 {
@@ -708,6 +709,7 @@ header ul
    grid-template-rows: 0.5fr 1fr 1fr 1fr;
    justify-items: center;
    margin: 0 25%;
+   font-size: 0.8em;
 }
 #portfolio h1
 {
@@ -719,6 +721,8 @@ header ul
     box-shadow: 0px 4px 60px 0px #4E0AA6;
     width:100%;
     height: 50vh;
+    text-decoration: none;
+    color: white;
 }
 .projects
 {
@@ -738,6 +742,7 @@ header ul
     background-color: #4e0aa6a0;
     padding: 1%;
     position: relative;
+    padding: 3%;
 }
 .projects:hover .projectd
 {
@@ -767,6 +772,73 @@ header ul
 
 /* portfolio end */
 
+/* habilidades start */
+#habilidades
+{
+  display: grid;
+  grid-template-columns: 49% 2% 49%;
+}
+#line
+{
+  margin-top: 1.5vh;
+  width: 2vh;
+  background-color: #9F55FF;
+  height: 100%;
+  z-index: -100;
+  position: relative;
+  justify-self: center;
+  
+}
+.bola
+{
+  background-color: #9F55FF;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  position: absolute;
+  left: -1.4vh;
+}
+#bolafim
+{
+  position: absolute;
+  top: 99%;
+  background-color: #9F55FF;
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  left: -1.4vh;
+}
+.habdescription
+{
+  width: 60vh;
+}
+.habdescriptionright
+{
+  width: 60vh;
+  margin-left: 4vh;
+}
+.habdescription h1
+{
+  margin-left: 4vh;
+}
+.habdescriptionleft
+{
+  justify-self: flex-end;
+  text-align: right;
+  width:60vh;
+  margin-right: 4vh;
+}
+.habimg
+{
+  fill: #9F55FF;
+ 
+}
+#iconchato
+{
+  margin-left: 4vh;
+}
+/* habilidades end */
+
 /* contato start */
 #contato input
 {
@@ -782,6 +854,7 @@ header ul
 }
 #contato
 {
+   margin-top: 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10vh 10vw;
@@ -904,3 +977,29 @@ header ul
     justify-self: center;
 }
 /* contato end */
+
+/* footer start*/
+footer
+{
+    margin-top: 5vh;
+}
+footer div
+{
+    display: inline;
+    color: white;
+    text-align: center;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+footer svg
+{
+    fill: #8C00FB;
+}
+
+footer a 
+{
+    color: #8C00FB;
+    cursor: pointer;
+}
+/* footer end*/
