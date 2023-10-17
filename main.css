@@ -13,8 +13,22 @@ body
 .dark-mode
 {
     /* background-color: white; */
-    background-color: #dcdcf5; 
+    background-color: #cfaff6; 
     color:#000024;
+
+    #nome
+    {
+      color: white;
+    }
+    #descrição
+    {
+      color: white;
+    }
+    #contato form
+    {
+        background-color:#8a00fba9;
+    }
+    
    
 }
 /* efeito glitch */
