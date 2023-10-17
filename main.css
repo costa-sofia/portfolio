@@ -28,8 +28,10 @@ body
     {
         background-color:#8a00fba9;
     }
-    
-   
+    .title2
+    {
+        -webkit-text-stroke: 0.1px #ffffff;
+    }
 }
 /* efeito glitch */
 .hero {
@@ -605,6 +607,16 @@ header ul
 /* sobre start */
 
 .title
+{
+    text-align: center;
+    -webkit-text-stroke: 0.1px #9F55FF;
+    color: #00002400;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 10vh;
+    grid-column: span 3;
+}
+.title2
 {
     text-align: center;
     -webkit-text-stroke: 0.1px #9F55FF;
