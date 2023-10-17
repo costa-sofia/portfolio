@@ -855,7 +855,7 @@ header ul
 }
 #contato
 {
-   margin-top: 5vh;
+    margin-top: 5vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 10vh 10vw;
@@ -1004,3 +1004,163 @@ footer a
     cursor: pointer;
 }
 /* footer end*/
+
+/* @media start */
+@media screen and (max-width: 600px) 
+{
+  body
+  {
+    overflow-x: hidden;
+    font-size: 0.7rem;
+  }
+
+  .hero 
+  {
+    font-size: clamp(7px, 7vw, 25px);
+  }
+
+  header
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header svg
+  {
+    width: 3vh;
+  }
+
+  #sobremiminfo
+  {
+      display: block;
+  }
+
+  #sobreimg
+  {
+    display: none;
+  }
+
+  #portfolio
+  {
+    grid-template-columns: 30vh 30vh;
+    padding: 0 7%;
+    margin: auto;
+  }
+
+  #portfolio a
+  {
+    height: 30vh;
+  }
+
+  .projectd
+  {
+    height: 30vh;
+    font-size: 0.5rem;
+  }
+
+  #line
+  {
+    width: 1vh
+  }
+  .bola
+    {
+      width: 3vh;
+      height: 3vh;
+      left: -1vh;
+    }
+  #bolafim
+  {
+    width: 3vh;
+      height: 3vh;
+      left: -1vh
+  }
+.habdescription
+{
+  width: 20vh;
+}
+.habdescriptionright
+{
+  width: 20vh;
+}
+.habdescriptionleft
+{
+  width: 30vh;
+}
+
+#contato
+{
+  padding: 0;
+  font-size: 0.8rem;
+  justify-content: space-evenly; 
+  grid-template-columns: 80%;
+  padding-top: 5vh;
+}
+
+#fname 
+{
+    height: 4vh;
+}
+#cemail
+{
+    height: 4vh;
+}
+#subject
+{
+    height: 4vh;
+}
+#telefone
+{
+    height: 4vh;
+    
+}
+#contactform textarea
+{
+    height: 15vh;
+   
+}
+
+#message::placeholder
+{
+   font-size: 0.7rem;
+}
+#contactform textarea
+{
+  height: 15vh;;
+}
+
+#contato input
+{
+   width: 100%;
+}
+#contato input::placeholder
+{
+  font-size: 0.5rem;
+}
+
+#contato textarea
+{
+    color: white;
+    font-size: 1.1rem;
+    text-align: center;
+}
+#submit
+{
+    padding: 1vh;
+}
+#contatoinfo
+{
+  display: none;
+}
+#menu a
+{
+  padding: 2%;
+  right: -140px;
+}
+#menu5
+{
+  padding: 2%;
+  right: -140px;
+}
+
+}
+/* @media end */
