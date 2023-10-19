@@ -1080,13 +1080,10 @@ footer a
   {
     height: 30vh;
   }
-  #project
-  {
-    height: 90%;
-  }
+
   .projectd
   {
-    height: 90%;
+    height: 30vh;
     font-size: 0.5rem;
   }
   #line
