@@ -6,7 +6,7 @@ var desenvolvedora = document.querySelector(".desenvolvedora");
 
 sofia.addEventListener("click", function(){
 
-            texto.textContent = "sofia";
+            texto.textContent = "Sou uma pessoa inquisitiva e apaixonada por tecnologia, sempre em busca de novos conhecimentos e desafios. Com uma inclinação para a leitura e uma natureza comunicativa, estou constantemente explorando novas fronteiras no mundo da tecnologia. Meu interesse em esportes reflete minha determinação e perseverança, qualidades que trago para o meu trabalho diário. Sou ávida por aprender e adotar abordagens criativas para resolver problemas.";
 
 })
 
@@ -18,7 +18,7 @@ estudante.addEventListener("click", function(){
 
 desenvolvedora.addEventListener("click", function(){
 
-    texto.textContent = "desenvolvedora";
+    texto.textContent = "Sou uma desenvolvedora full-stack com uma forte preferência pelo desenvolvimento back-end. Minha abordagem preferida é o TDD (Test Driven Development), onde priorizo a criação de testes antes da implementação do código. Atualmente, estou buscando constantemente maneiras de aprimorar minhas habilidades, entregando soluções eficientes e escaláveis para desafios de programação.";
 
 })
 
