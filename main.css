@@ -750,6 +750,7 @@ header ul
     height: 50vh;
     text-decoration: none;
     color: white;
+    text-align: center;
 }
 .projects
 {
@@ -758,7 +759,9 @@ header ul
     justify-content: center;
     align-items: center;
     position: relative;
+    align-items: center;
 }
+
 .projectd
 {
     display: none;
@@ -767,13 +770,17 @@ header ul
     width:100%;
     height: 50vh;
     background-color: #4e0aa6a0;
-    padding: 1%;
     position: relative;
-    padding: 3%;
+    padding: 4%;
+    
 }
+
 .projects:hover .projectd
 {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .projects:hover img
 {
@@ -800,69 +807,31 @@ header ul
 /* portfolio end */
 
 /* habilidades start */
-#habilidades
-{
+#habilidades{
   display: grid;
-  grid-template-columns: 49% 2% 49%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  text-align: center;
 }
-#line
-{
-  margin-top: 1.5vh;
-  width: 2vh;
-  background-color: #9F55FF;
+.tec{
+  padding-bottom: 10vh;
+  grid-column: span 5;
+}
+#habilidades a{
+  border: 2px solid #4E0AA6;
+  width:100%;
   height: 100%;
-  z-index: -100;
-  position: relative;
-  justify-self: center;
-  
+  text-decoration: none;
+  color: white;
+  overflow: hidden;
+  transition: 1s;
+  padding: 10%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: end;
+  justify-content: center;
 }
-.bola
-{
-  background-color: #9F55FF;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  position: absolute;
-  left: -1.4vh;
-}
-#bolafim
-{
-  position: absolute;
-  top: 99%;
-  background-color: #9F55FF;
-  width: 5vh;
-  height: 5vh;
-  border-radius: 50%;
-  left: -1.4vh;
-}
-.habdescription
-{
-  width: 60vh;
-}
-.habdescriptionright
-{
-  width: 60vh;
-  margin-left: 4vh;
-}
-.habdescription h1
-{
-  margin-left: 4vh;
-}
-.habdescriptionleft
-{
-  justify-self: flex-end;
-  text-align: right;
-  width:60vh;
-  margin-right: 4vh;
-}
-.habimg
-{
-  fill: #9F55FF;
- 
-}
-#iconchato
-{
-  margin-left: 4vh;
+.projectstec:hover{
+  box-shadow: 0px 4px 60px 0px #4E0AA6;
 }
 /* habilidades end */
 
@@ -1080,12 +1049,14 @@ footer a
   #portfolio a
   {
     height: 30vh;
+    text-align: center;
   }
 
   .projectd
   {
     height: 30vh;
     font-size: 0.5rem;
+    text-align: center;
   }
   #line
   {
